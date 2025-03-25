@@ -1,6 +1,10 @@
-require 'pry'
+class Player 
+  attr_accessor :name , :life_points
 
-1
+  def initialize(name_to_save)
+    @name = name_to_save
+    @life_points = 10
+  end
 
   def show_state
     "#{name} à #{life_points} points de vies"
